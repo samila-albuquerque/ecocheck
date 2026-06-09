@@ -31,7 +31,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 
 Você pode visualizar e testar a aplicação funcionando em tempo real clicando no link abaixo:
 
-👉 [Clique aqui para acessar o EcoCheck](SEU_LINK_DO_DEPLOY_AQUI)
+👉 [Clique aqui para acessar o EcoCheck](https://samila-albuquerque.github.io/ecocheck/)
 
 ---
 
