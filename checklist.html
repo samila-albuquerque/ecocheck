@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCheck - Checklist</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/checklist.css">
+    <script src="JS/checklist.js" defer></script>
+</head>
+<body>
+
+    <nav class="menu-visual">
+    <a href="index.html">🏭 Início</a>
+    <a href="checklist.html" class="ativo">📋 Checklist</a>
+    <a href="sobre.html">ℹ️ Sobre</a>
+</nav>
+
+    <main>
+        <h2>Checklist de sustentabilidade Industrial</h2>
+        <p>Marque os itens que estão em conformidade na sua empresa:</p>
+
+        <div class="campo-setor">
+    <label for="setor">Selecione o setor industrial:</label>
+    <select id="setor" name="setor">
+        <option value="">-- Escolha um setor --</option>
+        <option value="producao">🏭 Produção / Chão de Fábrica</option>
+        <option value="manutencao">🔧 Manutenção</option>
+        <option value="logistica">📦 Logística e Estoque</option>
+        <option value="administracao">💼 Administração / Escritório</option>
+    </select>
+</div>
+
+        <form>
+            
+            <section id="producao" class="secao-checklist"> 
+            <h3>⚡Energia e Equipamentos (Produção)</h3>
+            <ul class="lista-checklist">
+                <li>
+                    <label>
+                        <input type="checkbox" name="p1"> Máquinas e equipamentos não utilizados estão desligados?
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="p2"> Iluminação de setores vazios foi apagada?
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="p3"> Os motores e esteiras estão operando sem ruídos ou aquecimento anormal?
+                    </label>
+                </li>
+            </ul>
+
+            <h3>♻️ Gestão de Resíduos e Reciclagem</h3>
+            <ul class="lista-checklist">
+                <li>
+                    <label>
+                        <input type="checkbox" name="p4"> Os resíduos de produção (sucatas, plásticos, EPIs usados) foram descartados nas lixeiras de coleta seletiva corretas?
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="p5"> Há armazenamento adequado para materiais perigosos ou químico contaminantes?
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="p6"> Os panos e estopas sujos de óleo foram jogados nos tambores específicos para resíduos perigosos?
+                    </label>
+                </li>
+            </ul>
+
+            <h3>💧 Uso da Água e Recursos</h3>
+            <ul class="lista-checklist">
+                <li>
+                    <label>
+                        <input type="checkbox" name="p7"> Foi identificado algum vazamento de água, vapor ou comprimido nas tubulações do setor?
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="p8"> As torneiras e mangueiras de lavagem da área fabril estão totalmente fechadas?
+                    </label>
+                </li>
+            </ul>
+
+            <h3>🧹 Organização e Segurança (5S)</h3>
+            <ul class="lista-checklist">
+            <li>
+                <label>
+                    <input type="checkbox" name="p9"> As vias de circulação e saídas de emergência estão totalmente desobstruídas?
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="p10"> As ferramentas de trabalho estão limpas e guardadas no seus devidos lugares?
+                </label>
+            </li>
+            </ul>
+        </section>
+
+        
+
+        <section id="manutencao" class="secao-checklist">
+    <h3>🛠️ Manutenção Preventiva e Eficiência</h3>
+    <ul class="lista-checklist">
+        <li>
+            <label><input type="checkbox" name="m1"> Há vazamento de óleo ou fluidos nas máquinas?</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="m2"> As ferramentas estão organizadas e limpas na bancada?</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="m3"> Os planos de lubrificação dos equipamentos estão em dia para evitar desgaste e desperdício de energia?</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="m4"> Os filtros de ar e de óleo dos maquinários foram limpos ou trocados no prazo estipulado?</label>
+        </li>
+    </ul>
+
+    <h3>🔍 Controle de Vazamentos e Utilidades</h3>
+    <ul class="lista-checklist">
+        <li>
+            <label><input type="checkbox" name="m5"> Foi feita a varredura e correção de vazamentos nas linhas de ar comprimido (um dos maiores vilões do consumo de energia)?</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="m6"> As vedações de tubulações de água, vapor ou gases foram inspecionadas e estão sem vazamentos?</label>
+        </li>
+    </ul>
+
+    <h3>⚠️ Descarte de Resíduos Perigosos</h3>
+    <ul class="lista-checklist">
+        <li>
+            <label><input type="checkbox" name="m7"> Óleos lubrificantes usados e fluidos hidráulicos foram armazenados em tambores adequados e identificados para reciclagem (Rerrefino)?</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="m8"> Baterias velhas, lâmpadas ou componentes eletrônicos foram destinados ao descarte de logística reversa?</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="m9"> Os panos, estopas e EPIs contaminados com graxa ou produtos químicos foram descartados na lixeira de resíduos perigosos (Classe I)?</label>
+        </li>
+    </ul>
+</section>
+
+
+
+        <section id="logistica" class="secao-checklist">
+    <h3>📐 Armazenamento e Organização (5S)</h3>
+    <ul class="lista-checklist">
+        <li>
+            <label><input type="checkbox" name="l1"> Os paletes estão empilhados com segurança e dentro do limite de altura permitido?</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="l2"> As vias de circulação de pessoas e empilhadeiras estão totalmente desimpedidas?</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="l3"> Os produtos e materiais estão identificados corretamente nas prateleiras para evitar perdas ou avarias?</label>
+        </li>
+    </ul>
+
+    <h3>🔄 Reaproveitamento de Materiais e Embalagens</h3>
+    <ul class="lista-checklist">
+        <li>
+            <label><input type="checkbox" name="l4"> Caixas de papelão, plásticos bolha e paletes de madeira em bom estado estão sendo separados para reutilização?</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="l5"> Plásticos de paletização (filme stretch) descartados foram destinados à lixeira de reciclagem correta?</label>
+        </li>
+    </ul>
+
+    <h3>🔋 Eficiência Energética e Frotas</h3>
+    <ul class="lista-checklist">
+        <li>
+            <label><input type="checkbox" name="l6"> As baterias das empilhadeiras elétricas são colocadas para carregar apenas nos horários permitidos e corretos?</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="l7"> As luzes dos corredores de estoque sem movimentação foram apagadas ou os sensores de presença estão funcionando?</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="l8"> As docas de carga e descarga estão fechadas quando não estão a ser utilizadas para evitar a perda de climatização do galpão?</label>
+        </li>
+    </ul>
+</section>
+
+            <section id="administracao" class="secao-checklist">
+        <h3>🖥️ Organização e Rotina (Administração)</h3>
+        <ul class="lista-checklist">
+            <li>
+                <label><input type="checkbox" name="a1"> Computadores e monitores foram desligados ao final do expediente?</label>
+            </li>
+            <li>
+                <label><input type="checkbox" name="a2"> Ar-condicionado e luzes da sala estão desligados?</label>
+            </li>
+            <li>
+                <label><input type="checkbox" name="a3"> Documentos confidenciais foram guardados ou triturados?</label>
+            </li>
+            <li>
+                <label><input type="checkbox" name="a4"> As mesas de trabalho e áreas comuns estão limpas e organizadas?</label>
+            </li>
+        </ul>
+    </section>
+                
+
+            <button type="submit">Salvar Avaliação</button>
+
+        </form>
+    </main>
+
+    <footer>
+    <div class="footer-content">
+        <p>Desenvolvido por Sâmila Albuquerque</p>
+        <p>Projeto Integrador - Liga Steam | ArcelorMittal 2026</p>
+    </div>
+</footer>
+
+    </main>
+    
+</body>
+</html>

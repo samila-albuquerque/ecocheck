@@ -1,0 +1,180 @@
+/* ==========================================================================
+   1. RESET & CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F6E9CA; /* Off-White: Fundo suave e confortável */
+    color: #13312A;            /* Verde Escuro Quase Preto: Leitura perfeita */
+    line-height: 1.6;
+}
+
+/* Container para centralizar o conteúdo e organizar as páginas */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ==========================================================================
+   2. TIPOGRAFIA & DETALHES
+   ========================================================================== */
+h1{
+    text-align: center;
+    font-size: 38px;
+    margin-top: 20px;
+}
+
+
+h1, h2, h3 {
+    color: #155446; /* Verde Petróleo Intenso: Destaque profissional */
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    border-bottom: 2px solid #C69A72; /* Bege/Marrom Suave na linha de detalhe */
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   3. MENU DE NAVEGAÇÃO (Sticky Header)
+   ========================================================================== */
+header {
+    background-color: #ffffff; /* Fundo branco puro para destacar o menu */
+    box-shadow: 0 2px 10px rgba(19, 49, 42, 0.08); /* Sombra leve com o tom escuro */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 60px;
+}
+
+.menu-visual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgb(19, 49, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 60px;
+    background-color: #ffffff;
+
+}
+
+.menu-visual a {
+    text-decoration: none;
+    color: #13312A; /* Cor do link padrão */
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 20px;
+    transition: color 0.2s ease;
+}
+
+.menu-visual a:hover {
+    color: #155446; /* Muda para o Verde Petróleo ao passar o mouse */
+}
+
+.menu-visual a.ativo {
+    border-bottom: 3px solid #155446; /* Linha com o seu Verde Petróleo */
+    color: #155446; /* Deixa o texto com a cor de destaque */
+    font-weight: bold; /* Dá um leve destaque no texto */
+    padding-bottom: 5px; /* Cria um espacinho entre o texto e a linha */
+}
+
+/* ==========================================================================
+   4. SEÇÕES & LISTAS (Cards de Conteúdo)
+   ========================================================================== */
+section {
+    background-color: #ffffff; /* Fundo branco nos cards para destacar do fundo creminho */
+    padding: 40px;
+    margin: 60px auto 30px auto;
+    max-width: 900px;
+    text-align: center;
+    border-radius: 10px;       /* Bordas arredondadas modernas */
+    box-shadow: 0 4px 12px rgba(19, 49, 42, 0.04); /* Sombra sutil */
+}
+
+.lista-beneficios {
+    list-style-type: none; /* Sem aquelas bolinhas padrões */
+    padding: 0;
+    margin: 30px auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.lista-beneficios li {
+   background-color: #ffffff;
+   border: 1px solid #e0e0e0;
+   border-radius: 12px;
+   padding: 25px;
+   box-shadow: 0 4px 12px rgba(19, 49, 42, 0.05);
+   text-align: left;
+   font-size: 16px;
+   transition: transform 0.2 ease, box-shadow 0.2s ease;
+}
+
+.lista-beneficios li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(19, 49, 42, 0.1);
+    border-bottom: none; /* Remove a linha do último item */
+}
+
+/* ==========================================================================
+   5. CHAMADA DE AÇÃO (O Botão do Checklist que você já fez)
+   ========================================================================== */
+.container-cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.botao-cta {
+    display: inline-block;
+    background-color: #155446; /* Verde Petróleo no botão principal */
+    color: #ffffff;            /* Texto branco */
+    padding: 14px 32px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(21, 84, 70, 0.2); /* Sombra com a cor do botão */
+    transition: all 0.3s ease;
+}
+
+.botao-cta:hover {
+    background-color: #13312A; /* Fica bem escuro ao passar o mouse */
+    transform: translateY(-3px); /* Sobe de leve */
+    box-shadow: 0px 6px 15px rgba(19, 49, 42, 0.3);
+}
+
+/* ==========================================================================
+   6. RODAPÉ
+   ========================================================================== */
+footer {
+    background-color: #13312A; /* Fundo bem escuro e marcante */
+    color: #F6E9CA;            /* Texto em Off-White para contrastar perfeitamente */
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 60px;
+    font-size: 14px;
+    border-top: 3px solid #C69A72; /* Detalhe bege no topo do rodapé */
+}
